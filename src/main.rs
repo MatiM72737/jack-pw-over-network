@@ -8,7 +8,7 @@ use std::time::Duration;
 // Constants
 const UDP_PORT: u16 = 2137;
 const UDP_PORT2: u16 = 2137;
-const RECEIVING_IP: &str = "127.0.0.1";
+const RECEIVING_IP: &str = "127.0.0.1"; 
 const SENDING_IP: &str = "127.0.0.1";
 const UDP_PACKET_SIZE: usize = 512;
 const BUFFER_SIZE: usize = 48000 * 2;
