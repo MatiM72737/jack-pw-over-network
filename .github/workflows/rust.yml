@@ -17,7 +17,7 @@ jobs:
       run: |
         sudo apt-get update
         # Try to install JACK2, fallback to PipeWire JACK if needed
-        sudo apt-get install -y libjack-jackd2-dev || sudo apt-get install -y pipewire-jack libpipewire-0.3-jack
+        sudo apt-get install -y pipewire-jack libpipewire-0.3-jack || sudo apt-get install -y libjack-jackd2-dev 
 
     - name: Install Rust
       uses: actions-rs/toolchain@v1
