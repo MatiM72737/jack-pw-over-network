@@ -1,7 +1,7 @@
 [package]
 name = "jack-pw-over-network"
 version = "0.1.0"
-edition = "2025"
+edition = "2024"
 license = "GPL-3.0-or-later"
 authors = ["MatiM72737 mateuszmazur001@gmail.com>"]
 description = "Cross-platform audio over network"

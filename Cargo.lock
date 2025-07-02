@@ -56,6 +56,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "jack-pw-over-network"
+version = "0.1.0"
+dependencies = [
+ "ctrlc",
+ "jack",
+ "ringbuf",
+]
+
+[[package]]
 name = "jack-sys"
 version = "0.5.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -67,15 +76,6 @@ dependencies = [
  "libloading",
  "log",
  "pkg-config",
-]
-
-[[package]]
-name = "jack-test"
-version = "0.1.0"
-dependencies = [
- "ctrlc",
- "jack",
- "ringbuf",
 ]
 
 [[package]]
