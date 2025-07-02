@@ -8,11 +8,16 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v4
+
+    - name: Install JACK or PipeWire JACK
+      run: |
+        sudo apt-get update
+        # Try to install JACK2, fallback to PipeWire JACK if needed
+        sudo apt-get install -y libjack-jackd2-dev || sudo apt-get install -y pipewire-jack libpipewire-0.3-jack
 
     - name: Install Rust
       uses: actions-rs/toolchain@v1
