@@ -1,0 +1,9 @@
+[package]
+name = "jack-test"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+jack = "*"
+ringbuf = "*"
+ctrlc = "*"
