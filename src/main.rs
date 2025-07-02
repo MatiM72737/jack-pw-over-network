@@ -6,10 +6,10 @@ use std::thread;
 use std::time::Duration;
 
 // Constants
-const UDP_PORT: u16 = 2138;
+const UDP_PORT: u16 = 2137;
 const UDP_PORT2: u16 = 2137;
-const RECEIVING_IP: &str = "192.168.0.135";
-const SENDING_IP: &str = "192.168.0.135";
+const RECEIVING_IP: &str = "127.0.0.1";
+const SENDING_IP: &str = "127.0.0.1";
 const UDP_PACKET_SIZE: usize = 512;
 const BUFFER_SIZE: usize = 48000 * 2;
 const BYTES_PER_SAMPLE: usize = 4;
